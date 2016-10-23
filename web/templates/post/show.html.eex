@@ -1,0 +1,12 @@
+<h2 class="text-center">
+  <strong><%= @post.title %></strong>
+</h2>
+<div class="text-center">
+ <%= @post.author %>
+</div>
+<p>
+  <%= @post.conent %>
+</p>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>
