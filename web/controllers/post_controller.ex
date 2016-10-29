@@ -1,6 +1,6 @@
 defmodule PhoenixPost.PostController do
   use PhoenixPost.Web, :controller
-
+  
   alias PhoenixPost.Post
 
   def index(conn, _params) do

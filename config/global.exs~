@@ -1,0 +1,5 @@
+use Mix.Config
+
+config :phoenix_post,
+  wechat_app_id: "",
+  wechat_app_secret: ""

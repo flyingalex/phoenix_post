@@ -17,7 +17,9 @@ defmodule PhoenixPost.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-      
+    get "/wechat", WechatController, :index
+    get "/login", WechatController, :login
+    
     # psot_path  GET     /psots           HelloPhoenix.PsotController :index
     # psot_path  GET     /psots/:id/edit  HelloPhoenix.PsotController :edit
     # psot_path  GET     /psots/new       HelloPhoenix.PsotController :new
