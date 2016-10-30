@@ -9,7 +9,7 @@ defmodule PhoenixPost.WechatController do
   @secret fetch_env!(:phoenix_post, :wechat_app_secret)
 
   def index(conn, _params) do
-    redirect_uri = '121.42.36.92/login'
+    redirect_uri = 'http://121.42.36.92/login'
     redirect_url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=#{@app_id}&redirect_uri=#{redirect_uri}&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect"
     redirect conn, external: redirect_url
     # response = HTTPoison.get!("https://api.github.com")
